@@ -24,7 +24,10 @@ st.markdown(f"""
     """, unsafe_allow_html=True)
 
 # DONNÉES CLIENTS ET PRODUITS
-USERS = {"corto_pro": {"password": "cafe2026", "nom": "Client Partenaire"}}
+USERS = {
+    "corto_pro": {"password": "cafe2026", "nom": "Client Partenaire"},
+    "sylvain_ruf": {"password": "emmalaplusbelle", "nom": "Sylvain Ruf"}
+}
 data_produits = {
     'Réf': ['GUAPO', 'KOPI', 'BACAN', 'COSURCA', 'SIDAMA', 'TAFACCE'],
     'Nom': ['GUAPO - Guatemala', 'KOPI - Indonésie', 'BACAN - Pérou', 'COSURCA - Colombie', 'SIDAMA - Éthiopie', 'TAFACCE - Éthiopie'],
