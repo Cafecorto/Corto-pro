@@ -8,7 +8,7 @@ from email.mime.multipart import MIMEMultipart
 DESTINATAIRE = "contact@cafe-corto.com"
 # /!\ REMPLACEZ CES DEUX LIGNES PAR VOS INFOS GMAIL /!\
 EMAIL_EXPEDITEUR = "votre-email@gmail.com" 
-MOT_DE PASSE_APP = "votre-code-secret-google" 
+MOT_DE_PASSE_APP = "votre-code-secret-google" 
 
 st.set_page_config(page_title="Café Corto - Espace Pro", page_icon="☕", layout="wide")
 
