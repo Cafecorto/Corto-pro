@@ -87,7 +87,7 @@ else:
         df_p = pd.DataFrame(panier)
         st.table(df_p)
         total = df_p["Total"].sum()
-        st.metric("Total à régler par virement", f"{total:.2f} € HT")
+        st.metric("Réglement selon vos conditions habituelles", f"{total:.2f} € HT")
         notes = st.text_area("Notes de livraison")
         
         if st.button("🚀 VALIDER LA COMMANDE"):
