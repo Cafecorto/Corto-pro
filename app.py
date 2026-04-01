@@ -34,9 +34,9 @@ data_produits = {
     {"Café": "KOPI - Indonésie", "Prix_1kg": 28.00, "Prix_250g": 7.20},
     {"Café": "BACAN - Pérou", "Prix_1kg": 28.00, "Prix_250g": 6.70},
     {"Café": "SIDAMA - Éthiopie", "Prix_1kg": 33.00, "Prix_250g": 8.20},
-    {"Café": "COSURCA - Colombie", "Prix_1kg": 30.00, "Prix_250g": 7.70}
-    {"Café": "TAFACCE - Éthiopie", "Prix_1kg": 35.00, "Prix_250g": 9.00}
-    {"Café": "DECAF - Mexique", "Prix_1kg": 28.00 "Prix_250g": 7.00}
+    {"Café": "COSURCA - Colombie", "Prix_1kg": 30.00, "Prix_250g": 7.70},
+    {"Café": "TAFACCE - Éthiopie", "Prix_1kg": 35.00, "Prix_250g": 9.00},
+    {"Café": "DECAF - Mexique", "Prix_1kg": 28.00 "Prix_250g": 7.00},
 
     
 ]
