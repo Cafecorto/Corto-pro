@@ -85,7 +85,9 @@ else:
     
     panier_liste = []
     
-    # En-tête du tableau
+   # En-tête du tableau
     h1, h2, h3 = st.columns([2, 1, 1])
     h1.write("**Variété de Café**")
-    h2.write("**
+    h2.write("**Format 1kg**")
+    h3.write("**Format 250g**")
+    st.divider()
