@@ -74,14 +74,12 @@ else:
     
     panier_liste = []
     
-    # En-tête
     h1, h2, h3 = st.columns([2, 1, 1])
     h1.write("**Variété**")
     h2.write("**Format 1kg**")
     h3.write("**Format 250g**")
     st.divider()
 
-    # ICI LA BOUCLE QUI DEVAIT S'AFFICHER
     for p in data_produits:
         c1, c2, c3 = st.columns([2, 1, 1])
         c1.write(f"**{p['Café']}**")
@@ -99,19 +97,15 @@ else:
         df_p = pd.DataFrame(panier_liste)
         st.table(df_p[["Produit", "Format", "Qté", "Total"]])
         total_final = df_p["Total"].sum()
-        st.metric("Total", f"{total_final:.2f} € HT")
-        notes = st.text_area("Notes de livraison")
         
-        if st.button("🚀 VALIDER LA COMMANDE"):
-            if envoyer_email(st.session_state["user"]["nom"], df_p.to_string(index=False), total_final, notes):
-                st.success("Commande envoyée !")
-                st.balloons()total_final = df_p["Total"].sum()
+        # Affichage du total et de la phrase de paiement
         st.metric("Total de la commande", f"{total_final:.2f} € HT")
-        
-        # AJOUTE CETTE LIGNE ICI :
         st.info("ℹ️ Règlement selon vos conditions habituelles après réception de facture.")
         
         notes = st.text_area("Notes de livraison")
         
         if st.button("🚀 VALIDER LA COMMANDE"):
-            # ... reste du code ...
+            if envoyer_email(st.session_state["user"]["nom"], df_p.to_string(index=False), total_final, notes):
+                st.success("Commande envoyée !")
+                st.balloons()
+       
