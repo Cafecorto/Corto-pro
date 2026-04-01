@@ -105,4 +105,13 @@ else:
         if st.button("🚀 VALIDER LA COMMANDE"):
             if envoyer_email(st.session_state["user"]["nom"], df_p.to_string(index=False), total_final, notes):
                 st.success("Commande envoyée !")
-                st.balloons()
+                st.balloons()total_final = df_p["Total"].sum()
+        st.metric("Total de la commande", f"{total_final:.2f} € HT")
+        
+        # AJOUTE CETTE LIGNE ICI :
+        st.info("ℹ️ Règlement selon vos conditions habituelles après réception de facture.")
+        
+        notes = st.text_area("Notes de livraison")
+        
+        if st.button("🚀 VALIDER LA COMMANDE"):
+            # ... reste du code ...
